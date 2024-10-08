@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_series/Screens/Login/loginscreen.dart';
 import 'package:instagram_series/Widgets/uihelper.dart';
+
+import '../Login/loginscreen.dart';
 
 class SignUpScreen extends StatelessWidget {
   TextEditingController emailController = TextEditingController();
@@ -21,7 +22,7 @@ class SignUpScreen extends StatelessWidget {
                 controller: emailController,
                 text: "Email",
                 tohide: false,
-                textinputtype: TextInputType.emailAddress),
+              ),
             SizedBox(
               height: 10,
             ),
@@ -29,7 +30,7 @@ class SignUpScreen extends StatelessWidget {
                 controller: passwordController,
                 text: "Password",
                 tohide: true,
-                textinputtype: TextInputType.text),
+                ),
             SizedBox(
               height: 10,
             ),
@@ -37,7 +38,7 @@ class SignUpScreen extends StatelessWidget {
                 controller: usernameController,
                 text: "Username",
                 tohide: false,
-                textinputtype: TextInputType.name),
+              ),
             SizedBox(
               height: 30,
             ),
